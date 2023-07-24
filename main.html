@@ -1286,55 +1286,16 @@
             <section class="main-map">
                 <div class="wrap">
                     <h2 class="h-title">
-                        Мы на карте
+                        We are on the map
                     </h2>
                     <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d16441.152978977818!2d-73.98217129414533!3d40.74510887017531!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1690202334781!5m2!1sru!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCU5fRQJpD" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-                      -->
                     </div>
-                    <script
-                        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3312f999-ca0e-466c-8d39-0db0ecdab538"
-                        type="text/javascript"></script>
-                    <script>
 
-                        ymaps.ready(function () {
-                            var myMap = new ymaps.Map('map', {
-                                center: [56.837995, 60.600480],
-                                zoom: 15.8,
-                                controls: ['zoomControl']
-                            }, {
-                                searchControlProvider: 'yandex#search'
-                            })
-
-
-                            myPlacemark = new ymaps.Placemark(myMap.getCenter(),
-                                {
-                                    hintContent: 'Собственный значок метки',
-                                    balloonContent: 'Это красивая метка'
-                                },
-                                {
-                                    // Опции.
-                                    // Необходимо указать данный тип макета.
-                                    iconLayout: 'default#image',
-                                    // Своё изображение иконки метки.
-                                    iconImageHref: '/assets/img/label.png',
-                                    // Размеры метки.
-                                    iconImageSize: [40, 62],
-                                    // Смещение левого верхнего угла иконки относительно
-                                    // её "ножки" (точки привязки).
-                                    iconImageOffset: [-5, -38]
-                                })
-                            // myMap.geoObjects
-                            // .add(myPlacemark)
-
-                            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent)) {
-                                //... отключаем перетаскивание карты
-                                myMap.behaviors.disable('drag');
-                            }
-                        });
-
-                    </script>
                 </div>
             </section>
         </main>
